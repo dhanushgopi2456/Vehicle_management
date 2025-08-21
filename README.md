@@ -1,90 +1,72 @@
 # 🚗 Vehicle Management System
 
-This project is a **Vehicle Management System** designed to help organizations or users efficiently manage vehicle-related data such as vehicle registration, updates, and maintenance records. It provides a streamlined interface for both users and administrators to manage vehicle information with ease.
+A Flask-based web application for managing vehicle details, user registrations, and route search functionalities with an integrated SQLite database.
+
+## ✨ Features
+- User registration and login system
+- Add, update, and delete vehicle records
+- Search and display vehicle details
+- Role-based access for admin and users
+- SQLite database integration
 
 ## 🛠️ Tech Stack
-
-- **Frontend**: HTML, CSS, JavaScript, JSP
-- **Backend**: Java (Servlets)
-- **Database**: MySQL
-- **Server**: Apache Tomcat
-- **IDE**: Eclipse / IntelliJ IDEA
-
-## ✨ Key Features
-
-### 👤 User Functions
-- Vehicle registration with details (number, type, owner)
-- View existing vehicle entries
-- Edit or update vehicle data
-- Delete vehicle record
-
-### 🛠 Admin Functions
-- Admin login and dashboard
-- Full CRUD operations on all vehicle entries
-- View all registered vehicles
-- Delete invalid or old records
+- **Backend:** Python, Flask
+- **Frontend:** HTML, CSS (Jinja2 templates)
+- **Database:** SQLite
 
 ## 📂 Project Structure
+- `vip.py` → Main Flask application
+- `createdb.py` → Script to set up database
+- `templates/` → HTML templates for UI
+- `instance/vehicle_management.db` → Database fill
 
-Vehicle_management/
-├── src/
-│ ├── com/
-│ │ └── vehicle/servlet/
-│ ├── dao/
-│ ├── model/
-│ └── util/
-├── WebContent/
-│ ├── CSS/
-│ ├── JSP/
-│ ├── images/
-│ └── index.jsp
-├── vehicle_db.sql
-├── README.md
-└── ...
+Vehicle_Management/
+│
+├── instance/
+│   └── vehicle_management.db      # SQLite database
+│
+├── templates/                     # HTML templates
+│   ├── addvehicle.html
+│   ├── admin.html
+│   ├── deletevehicle.html
+│   ├── displayvehicle.html
+│   ├── login.html
+│   ├── register.html
+│   ├── response.html
+│   ├── searchroute.html
+│   └── user.html
+│
+├── __pycache__/                   # Compiled Python files
+│   └── createdb.cpython-312.pyc
+│
+├── createdb.py                    # Script to initialize database
+├── vip.py                         # Main Flask application file
+├── README.md                      # Project documentation
+
+## 🚀 How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dhanushgopi2456/Vehicle_management.git
+
+Navigate to the project folder:
+
+cd Vehicle_management
 
 
-## ⚙️ Getting Started
+Install dependencies:
 
-### Prerequisites
+pip install flask
 
-- Java JDK 8+
-- Apache Tomcat (v9 or later)
-- MySQL Server
-- Eclipse IDE (or any Java IDE with servlet support)
 
-### Steps to Run
+Initialize the database:
 
-1. **Clone the Repository**
-```bash
-git clone https://github.com/dhanushgopi2456/Vehicle_management
+python createdb.py
 
-Import Project
+Run the application:
 
-Open Eclipse → File → Import → Existing Projects into Workspace → Select this repo
+python vip.py
+Open in browser: http://127.0.0.1:5000/
 
-Configure Server
-
-Right-click Project → Run on Server → Choose Tomcat
-
-Setup MySQL
-
-Import vehicle_db.sql into your MySQL database.
-
-Update DB credentials in your code (usually in DBUtil.java).
-
-Run the Application
-
-Visit http://localhost:8080/Vehicle_management in your browser
-
-🧠 Future Enhancements
-Add vehicle service & maintenance tracking
-
-Role-based authentication (Admin vs User)
-
-Vehicle insurance reminders
-
-PDF export for vehicle reports
-
-👨‍💻 Developed By
+👤 Developed By
 Dhanush Gopi Kavala
-B.Tech | Java Full-Stack Developer | AI-ML Intern
+
