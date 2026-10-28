@@ -12,3 +12,24 @@
   <img src="https://img.shields.io/badge/HTML5-Frontend-E34F26?logo=html5&logoColor=white" alt="HTML5"/>
   <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?logo=css3&logoColor=white" alt="CSS3"/>
 </p>
+📌 Overview
+
+The Vehicle Management System is a web application developed using Python and Flask to simplify vehicle record management and user administration. It integrates an SQLite database to store and retrieve vehicle information efficiently.
+
+The application provides user registration, login, vehicle CRUD operations, vehicle search, and separate admin and user interfaces.
+
+✨ Key Features
+
+🔐 User Authentication — Registration and login functionality.
+
+🚘 Vehicle Management — Add, view, update, and delete vehicle records.
+
+🔎 Vehicle & Route Search — Search for vehicle information and access route-search functionality.
+
+👥 Role-Based Interfaces — Separate admin and user pages.
+
+🗄️ SQLite Integration — Lightweight, persistent database storage.
+
+🎨 Template-Based UI — Dynamic HTML pages rendered using Flask and Jinja2.
+
+⚡ CRUD Operations — Efficient management of vehicle records.
