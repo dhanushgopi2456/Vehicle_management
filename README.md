@@ -33,3 +33,33 @@ The application provides user registration, login, vehicle CRUD operations, vehi
 🎨 Template-Based UI — Dynamic HTML pages rendered using Flask and Jinja2.
 
 ⚡ CRUD Operations — Efficient management of vehicle records.
+
+🛠️ Technology Stack
+
+Technology
+
+Purpose
+
+Python
+
+Core application logic
+
+Flask
+
+Backend web framework
+
+HTML5 & CSS3
+
+User interface and styling
+
+Jinja2
+
+Dynamic HTML templating
+
+SQLite
+
+Relational database
+
+Git & GitHub
+
+Version control and repository hosting
