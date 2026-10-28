@@ -63,3 +63,24 @@ Relational database
 Git & GitHub
 
 Version control and repository hosting
+🏗️ Project Architecture
+
+Vehicle_Management/
+│
+├── instance/
+│   └── vehicle_management.db
+│
+├── templates/
+│   ├── addvehicle.html
+│   ├── admin.html
+│   ├── deletevehicle.html
+│   ├── displayvehicle.html
+│   ├── login.html
+│   ├── register.html
+│   ├── response.html
+│   ├── searchroute.html
+│   └── user.html
+│
+├── createdb.py
+├── vip.py
+└── README.md
